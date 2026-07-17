@@ -149,4 +149,11 @@ tests/       Automated regression tests
 
 ## License
 
-This repository does not currently declare a software license.
+SysysT is licensed under the [Mozilla Public License 2.0](LICENSE). You may
+use it commercially and combine it with a larger project. Modifications to
+MPL-covered source files must remain available under the MPL when distributed,
+and the source's license and copyright notices may not be removed.
+
+If you use SysysT in research, please cite it using the metadata in
+[CITATION.cff](CITATION.cff). Citation is requested as a scholarly norm; it
+is separate from the MPL's legal requirements.

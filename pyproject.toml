@@ -3,7 +3,11 @@ name = "sysyst"
 version = "0.1.0"
 description = "Desktop pipeline for LLM-assisted systematic literature reviews and meta-analysis"
 readme = "README.md"
+license = "MPL-2.0"
 requires-python = ">=3.11"
+classifiers = [
+    "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+]
 dependencies = [
     "anthropic>=0.20",
     "beautifulsoup4>=4.12",
