@@ -1,0 +1,44 @@
+# ═══════════════════════════════════════════════════════════════════
+# SysysT — Systematic Review Pipeline
+# ═══════════════════════════════════════════════════════════════════
+#
+# Install:  pip install -r requirements.txt
+#
+# For a minimal install (no GUI, no optional analytics):
+#   pip install numpy pandas scipy httpx pyyaml rapidfuzz
+#
+
+# ── Core (required for all pipeline stages) ──────────────────────
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+httpx>=0.24
+requests>=2.31
+pyyaml>=6.0
+rapidfuzz>=3.0
+
+# ── GUI (PySide6 desktop application) ────────────────────────────
+PySide6>=6.5
+matplotlib>=3.7
+
+# ── LLM providers (install the ones you use) ─────────────────────
+openai>=1.0
+anthropic>=0.20
+
+# ── Machine learning & NLP ───────────────────────────────────────
+scikit-learn>=1.3
+sentence-transformers>=2.2      # embeddings for clustering (TF-IDF fallback exists)
+tomotopy>=0.13                  # citation sLDA topic modeling
+
+# ── Network analysis ─────────────────────────────────────────────
+networkx>=3.1                   # graph algorithms
+python-louvain>=0.16            # Louvain community detection
+
+# ── PDF & fulltext extraction ────────────────────────────────────
+PyMuPDF>=1.23                   # fitz — fast PDF text extraction
+PyPDF2>=3.0                     # fallback PDF reader
+beautifulsoup4>=4.12            # HTML parsing for fulltext
+paper-qa>=5.0                   # optional PaperQA2 full-text RAG database
+
+# ── Dev & testing ────────────────────────────────────────────────
+pytest>=8.0
